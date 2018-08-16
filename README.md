@@ -2,11 +2,13 @@
 
 This app allows you to do the following actions:
 
-1) Import a League with its Teams and Players by using this URL:
-http://localhost:<port>/import-league/{leagueCode}
+1) Import a League with its Teams and Players by using this URL: 
+
+http://localhost:[port]/import-league/{leagueCode}
 
 2) You can get the total number of players that participate in a League by using this URL:
-http://localhost:<port>/total-players/{leagueCode}
+
+http://localhost:[port]/total-players/{leagueCode}
 
 ## Stack
 The app was built using the following technologies:
