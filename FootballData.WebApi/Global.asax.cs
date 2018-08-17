@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System;
+using System.Web;
 using System.Web.Http;
 using AutoMapper;
 using System.Collections.Generic;
@@ -31,7 +32,8 @@ namespace FootballData.WebApi
 
                 cfg.CreateMap<Team, Domain.Team>();
 
-                cfg.CreateMap<Player, Domain.Player>();
+                cfg.CreateMap<Player, Domain.Player>()
+                    .ForMember(dest => dest.ContractUntil, opt => opt.Condition(src => src.ContractUntil != DateTime.MinValue));
             });
         }
     }

@@ -23,7 +23,7 @@ namespace FootballData.Database.Mappings
 
             Property(t => t.Code)
                 .HasMaxLength(10)
-                .IsRequired();
+                .IsOptional();
 
             Property(t => t.ShortName)
                 .HasMaxLength(50)

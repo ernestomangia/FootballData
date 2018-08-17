@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using AutoMapper;
+
 using FootballData.Database;
 using FootballData.ExternalServices.FootballDataApi;
 using FootballData.Repositories;
@@ -68,7 +69,7 @@ namespace FootballData.WebApi.Controllers
 
                 if (teams == null)
                     throw new ApplicationException("No teams were found");
-                
+
                 foreach (var team in teams)
                 {
                     // Get Team from DB

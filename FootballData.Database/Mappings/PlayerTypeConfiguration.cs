@@ -33,10 +33,10 @@ namespace FootballData.Database.Mappings
 
             Property(p => p.Nationality)
                 .HasMaxLength(100)
-                .IsRequired();
+                .IsOptional();
 
             Property(p => p.ContractUntil)
-                .IsRequired();
+                .IsOptional();
 
             // FK
             HasRequired(p => p.Team);
